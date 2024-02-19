@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import subprocess
 
 def main():
-    visual = int(input("¿Que datos desea visualizar?"
+    visual = input("¿Que datos desea visualizar?"
                    "1. EQUIPOS QUE MAS PUNTOS OBTIENEN EN FASE DE GRUPOS"
                    "2. EQUIPOS QUE MAS GOLES MARCAN EN FASE DE GRUPOS"
                    "3. EQUIPOS QUE MAS GOLES RECIBEN EN FASE DE GRUPOS"
@@ -16,7 +16,7 @@ def main():
                    "9. DIAGRAMA DE GOLES MARCADOS EN CASA VS VISITANTE EN FASE DE GRUPOS"
                    "10. PARTIDOS CON GOLES DE AMBOS EQUIPOS VS. PARTIDOS SIN GOLES DE AMBOS EQUIPOS EN TODA LA COMPETICIÓN"
                    "11. MEDIA DE GOLES EN LOS PARTIDOS DE LA COMPETICION Y CORRELACION ENTRE GOLES MARCADOS Y PUNTOS OBTENIDOS"
-                   ))
+                   )
     if visual == "1":
         # Ruta al script que quieres ejecutar
         script_path = 'ANALISIS/analisis1.1.py'
@@ -82,3 +82,6 @@ def main():
         script_path = 'ESTADISTICAS/estadisticas.py'
         # Ejecutar el script
         subprocess.run(['python', script_path], check=True)
+    
+    if visual != 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 or 10 or 11:
+        print("Opción no válida, por favor elige una opción del 1 al 11")
