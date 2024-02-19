@@ -11,7 +11,6 @@ df.columns = df.columns.str.strip()
 # Filtrando datos para incluir solo la fase de grupos
 fase_grupos = df[df['fase'] == 'Fase de Grupos']
 
-
 ### EQUIPOS QUE MAS GOLES MARCAN DE VISITANTE
 # Calculando los goles marcados como visitante (equipo2) utilizando solo la columna 'resutadoparte2'
 goles_marcados_visitante_p2 = fase_grupos.groupby('equipo2')['resutadoparte2'].sum()
