@@ -2,9 +2,10 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-
-# Cargando los datos desde el archivo subido
-df = pd.read_csv('datos22-23.csv')
+# Ruta relativa al archivo CSV desde la ubicación de analisis.py
+ruta_csv = "DATOS/datos22-23.csv"
+# Leer el archivo CSV
+df = pd.read_csv(ruta_csv)
 # Corrigiendo los nombres de las columnas eliminando espacios extras
 df.columns = df.columns.str.strip()
 

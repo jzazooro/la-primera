@@ -2,14 +2,18 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Cargando los datos (asegúrate de ajustar la ruta del archivo según sea necesario)
-df = pd.read_csv('datos22-23.csv')
+# Ruta relativa al archivo CSV desde la ubicación de analisis.py
+ruta_csv = "DATOS/datos22-23.csv"
+# Leer el archivo CSV
+df = pd.read_csv(ruta_csv)
+# Corrigiendo los nombres de las columnas eliminando espacios extras
+df.columns = df.columns.str.strip()
 
-### DIAGRAMA DE GOLES MARCADOS EN CASA VS VISITANTE
+### DIAGRAMA DE GOLES MARCADOS EN CASA VS VISITANTE EN FASE DE GRUPOS
 # Asegurándose de que los nombres de las columnas se manejan correctamente
 df.columns = df.columns.str.strip()
 # Filtrando los datos para incluir solo la fase de grupos, si es necesario
-# fase_grupos = df[df['fase'] == 'Fase de Grupos']
+fase_grupos = df[df['fase'] == 'Fase de Grupos']
 # Calculando goles marcados como local y visitante
 goles_marcados_local = df.groupby('equipo1')['resultadoparte1'].sum().add(df.groupby('equipo1')['resutadoparte2'].sum(), fill_value=0)
 goles_marcados_visitante = df.groupby('equipo2')['resutadoparte2'].sum()
