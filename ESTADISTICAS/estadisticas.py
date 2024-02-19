@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 # Ruta relativa al archivo CSV desde la ubicación de analisis.py
 ruta_csv = "DATOS/datos22-23.csv"
 # Leer el archivo CSV
