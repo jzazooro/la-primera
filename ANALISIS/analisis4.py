@@ -9,7 +9,6 @@ df = pd.read_csv(ruta_csv)
 # Corrigiendo los nombres de las columnas eliminando espacios extras
 df.columns = df.columns.str.strip()
 
-
 ### PARTIDOS CON GOLES DE AMBOS EQUIPOS VS. PARTIDOS SIN GOLES DE AMBOS EQUIPOS EN TODA LA COMPETICIÓN
 # Revisando las condiciones correctamente
 partidos_con_goles_ambos_correcto = df[(df['resultadoparte1'] > 0) & (df['resutadoparte2'] > 0)]
@@ -23,7 +22,7 @@ etiquetas_partidos_correcto = ['Partidos con Goles de Ambos', 'Partidos sin Gole
 # Creando el diagrama corregido
 plt.figure(figsize=(8, 6))
 plt.bar(etiquetas_partidos_correcto, datos_partidos_correcto, color=['green', 'orange'])
-plt.title('Comparación de Partidos: Goles de Ambos Equipos vs. No Goles de Ambos')
+plt.title('Partidos con Goles de ambos Equipos vs. Partidos sin Goles de Ambos Equipos')
 plt.ylabel('Número de Partidos')
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.show()

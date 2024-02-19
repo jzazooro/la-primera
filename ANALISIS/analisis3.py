@@ -25,7 +25,7 @@ data = [goles_marcados_local, goles_marcados_visitante]
 # Creando el Box Plot
 plt.figure(figsize=(10, 6))
 plt.boxplot(data, patch_artist=True, labels=['Goles Marcados en Casa', 'Goles Marcados como Visitante'])
-plt.title('Distribución de Goles Marcados en Casa vs. Como Visitante')
+plt.title('Distribución de Goles Marcados en Casa vs Visitante')
 plt.ylabel('Goles Marcados')
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.show()

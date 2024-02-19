@@ -19,7 +19,7 @@ puntos_obtenidos_local_sorted = puntos_obtenidos_local.sort_values(ascending=Fal
 # Creando el gráfico de barras para los puntos obtenidos como local
 plt.figure(figsize=(10, 8))
 puntos_obtenidos_local_sorted.plot(kind='bar', color='red')
-plt.title('Puntos Obtenidos de Local por Equipo en la Fase de Grupos - Champions League')
+plt.title('Puntos Obtenidos por Equipo de Local en la Fase de Grupos - Champions League')
 plt.xlabel('Equipo')
 plt.ylabel('Puntos Totales Obtenidos de Local')
 plt.xticks(rotation=45, ha='right')

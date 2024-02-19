@@ -19,7 +19,7 @@ puntos_obtenidos_visitante_sorted = puntos_obtenidos_visitante.sort_values(ascen
 # Creando el gráfico de barras para los puntos obtenidos como visitante
 plt.figure(figsize=(10, 8))
 puntos_obtenidos_visitante_sorted.plot(kind='bar', color='cyan')
-plt.title('Puntos Obtenidos de Visitante por Equipo en la Fase de Grupos - Champions League')
+plt.title('Puntos Obtenidos por Equipo de Visitante en la Fase de Grupos - Champions League')
 plt.xlabel('Equipo')
 plt.ylabel('Puntos Totales Obtenidos de Visitante')
 plt.xticks(rotation=45, ha='right')

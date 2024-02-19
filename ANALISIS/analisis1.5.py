@@ -20,7 +20,7 @@ goles_marcados_visitante_p2_sorted = goles_marcados_visitante_p2.sort_values(asc
 # Creando el gráfico de barras para los goles marcados como visitante en la segunda parte
 plt.figure(figsize=(10, 8))
 goles_marcados_visitante_p2_sorted.plot(kind='bar', color='blue')
-plt.title('Goles Marcados de Visitante por Equipo - Fase de Grupos Champions League')
+plt.title('Goles Marcados por Equipo de Visitante en la Fase de Grupos - Champions League')
 plt.xlabel('Equipo')
 plt.ylabel('Goles Totales Marcados de Visitante (2ª Parte)')
 plt.xticks(rotation=45, ha='right')

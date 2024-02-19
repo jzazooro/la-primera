@@ -20,7 +20,7 @@ goles_marcados_local_p1_sorted = goles_marcados_local_p1.sort_values(ascending=F
 # Creando el gráfico de barras para los goles marcados de local en la primera parte
 plt.figure(figsize=(10, 8))
 goles_marcados_local_p1_sorted.plot(kind='bar', color='purple')
-plt.title('Goles Marcados de Local por Equipo - Fase de Grupos Champions League')
+plt.title('Goles Marcados por Equipo de Local en la Fase de Grupos - Champions League')
 plt.xlabel('Equipo')
 plt.ylabel('Goles Totales Marcados de Local (1ª Parte)')
 plt.xticks(rotation=45, ha='right')
