@@ -120,4 +120,3 @@ plt.ylabel('Puntos Totales Obtenidos de Visitante')
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
 plt.show()
-
