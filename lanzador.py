@@ -22,27 +22,27 @@ def main():
             print("Saliendo del programa.")
             break
         if visual == "1":
-            script_path = 'ANALISIS/analisis1.1.py'
+            script_path = 'ANALISIS22-23/analisis1.1.py'
         elif visual == "2":
-            script_path = 'ANALISIS/analisis1.2.py'
+            script_path = 'ANALISIS22-23/analisis1.2.py'
         elif visual == "3":
-            script_path = 'ANALISIS/analisis1.3.py'
+            script_path = 'ANALISIS22-23/analisis1.3.py'
         elif visual == "4":
-            script_path = 'ANALISIS/analisis1.4.py'
+            script_path = 'ANALISIS22-23/analisis1.4.py'
         elif visual == "5":
-            script_path = 'ANALISIS/analisis1.5.py'
+            script_path = 'ANALISIS22-23/analisis1.5.py'
         elif visual == "6":
-            script_path = 'ANALISIS/analisis1.6.py'
+            script_path = 'ANALISIS22-23/analisis1.6.py'
         elif visual == "7":
-            script_path = 'ANALISIS/analisis1.7.py'
+            script_path = 'ANALISIS22-23/analisis1.7.py'
         elif visual == "8":
-            script_path = 'ANALISIS/analisis2.py'
+            script_path = 'ANALISIS22-23/analisis2.py'
         elif visual == "9":
-            script_path = 'ANALISIS/analisis3.py'
+            script_path = 'ANALISIS22-23/analisis3.py'
         elif visual == "10":
-            script_path = 'ANALISIS/analisis4.py'
+            script_path = 'ANALISIS22-23/analisis4.py'
         elif visual == "11":
-            script_path = 'ESTADISTICAS/estadisticas.py'
+            script_path = 'ESTADISTICAS22-23/estadisticas.py'
         else:
             print("Opción no válida, por favor elige una opción del 0 al 11.")
             continue
