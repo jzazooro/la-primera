@@ -1,33 +1,33 @@
 equipo, numero de partidos, fase lograda, goles a favor, goles en contra, diferencia de goles, porterias a cero, valor de equipo, coeficiente uefa
-CIT, 12, semis, , , , 
-PSG, 8, octavos, , , , 
-LEI, 6, fase de grupos, , , , 
-BRU, 6, fase de grupos, , , , 
-LIV, 13, final, , , , 
-ATM, 10, cuartos, , , , 
-POR, 6, fase de grupos, , , , 
-ACM, 6, fase de grupos, , , , 
-AJA, 8, octavos, , , , 
-DOR, 6, fase de grupos, , , , 
-SPO, 8, octavos, , , , 
-BES, 6, fase de grupos, , , , 
-MAD, 13, ganador, , , , 
-SHE, 6, fase de grupos, , , , 
-SHA, 6, fase de grupos, , , , 
-INT, 8, octavos, , , , 
-BAY, 10, cuartos, , , , 
-BEN, 10, cuartos, , , , 
-BAR, 6, fase de grupos, , , , 
-DIN, 6, fase de grupos, , , , 
-MAN, 8, octavos, , , , 
-VIL, 12, semis, , , , 
-ATA, 6, fase de grupos, , , , 
-YOU, 6, fase de grupos, , , , 
-LIL, 8, octavos, , , , 
-SAL, 8, octavos, , , , 
-WOL, 6, fase de grupos, , , , 
-SEV, 6, fase de grupos, , , , 
-JUV, 8, octavos, , , , 
-CHE, 10, cuartos, , , , 
-ZEN, 6, fase de grupos, , , , 
-MAL, 6, fase de grupos, , , , 
+CIT, 12, semis, , , , , , 27
+PSG, 8, octavos, , , , , , 19
+LEI, 6, fase de grupos, , , , , , 17
+BRU, 6, fase de grupos, , , , , , 7
+LIV, 13, final, , , , , , 33
+ATM, 10, cuartos, , , , , , 19
+POR, 6, fase de grupos, , , , , , 10
+ACM, 6, fase de grupos, , , , , , 7
+AJA, 8, octavos, , , , , , 22
+DOR, 6, fase de grupos, , , , , , 10
+SPO, 8, octavos, , , , , , 16
+BES, 6, fase de grupos, , , , , , 4
+MAD, 13, ganador, , , , , , 30
+SHE, 6, fase de grupos, , , , , , 8
+SHA, 6, fase de grupos, , , , , , 6
+INT, 8, octavos, , , , , , 18
+BAY, 10, cuartos, , , , , , 26
+BEN, 10, cuartos, , , , , , 20
+BAR, 6, fase de grupos, , , , , , 15
+DIN, 6, fase de grupos, , , , , , 5
+MAN, 8, octavos, , , , , , 18
+VIL, 12, semis, , , , , , 24
+ATA, 6, fase de grupos, , , , , , 16
+YOU, 6, fase de grupos, , , , , , 8
+LIL, 8, octavos, , , , , , 17
+SAL, 8, octavos, , , , , , 17
+WOL, 6, fase de grupos, , , , , , 8
+SEV, 6, fase de grupos, , , , , , 12
+JUV, 8, octavos, , , , , , 20
+CHE, 10, cuartos, , , , , , 25
+ZEN, 6, fase de grupos, , , , , , 8
+MAL, 6, fase de grupos, , , , , , 5
