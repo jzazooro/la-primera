@@ -6,25 +6,25 @@ import subprocess
 def main():
     while True:
         visual = input("¿Qué datos desea visualizar?\n"
-                       "1. EQUIPOS QUE MÁS PUNTOS OBTIENEN EN FASE DE GRUPOS\n"
-                       "2. EQUIPOS QUE MÁS GOLES MARCAN EN FASE DE GRUPOS\n"
-                       "3. EQUIPOS QUE MÁS GOLES RECIBEN EN FASE DE GRUPOS\n"
-                       "4. EQUIPOS QUE MÁS GOLES MARCAN DE LOCAL\n"
-                       "5. EQUIPOS QUE MÁS GOLES MARCAN DE VISITANTE\n"
-                       "6. PUNTOS OBTENIDOS DE LOCAL\n"
-                       "7. PUNTOS OBTENIDOS DE VISITANTE\n"
-                       "8. ANÁLISIS BARCELONA FASE DE GRUPOS\n"
-                       "9. DIAGRAMA DE GOLES MARCADOS EN CASA VS VISITANTE EN FASE DE GRUPOS\n"
-                       "10. PARTIDOS CON GOLES DE AMBOS EQUIPOS VS. PARTIDOS SIN GOLES DE AMBOS EQUIPOS EN TODA LA COMPETICIÓN\n"
-                       "11. MEDIA DE GOLES EN LOS PARTIDOS DE LA COMPETICIÓN Y CORRELACIÓN ENTRE GOLES MARCADOS Y PUNTOS OBTENIDOS\n"
+                       "1. ESTADISTICAS EDICION 21-22\n"
+                       "2. ESTADISTICAS EDICION 22-23\n"
+                       "3. \n"
+                       "4. \n"
+                       "5. \n"
+                       "6. \n"
+                       "7. \n"
+                       "8. \n"
+                       "9. \n"
+                       "10. \n"
+                       "11. \n"
                        "0. Salir\n")
         if visual == "0":
             print("Saliendo del programa.")
             break
         if visual == "1":
-            script_path = 'ANALISIS22-23/analisis1.1.py'
+            script_path = 'ESTADISTICAS21-22/estadisticas21-22.py'
         elif visual == "2":
-            script_path = 'ANALISIS22-23/analisis1.2.py'
+            script_path = 'ESTADISTICAS22-23/estadisticas22-23.py'
         elif visual == "3":
             script_path = 'ANALISIS22-23/analisis1.3.py'
         elif visual == "4":
