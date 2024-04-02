@@ -10,14 +10,15 @@ def main():
                        "2. ESTADISTICAS EDICION 22-23\n"
                        "3. ANALISIS EDICION 21-22\n"
                        "4. ANALISIS EDICION 22-23\n"
+                       "5. PREDICCION EDICION 23-24\n"
                        "0. Salir\n")
         if visual == "0":
             print("Saliendo del programa.")
             break
         if visual == "1":
-            script_path = 'ESTADISTICAS21-22/estadisticas21-22.py'
+            script_path = 'ESTADISTICAS/estadisticas21-22.py'
         elif visual == "2":
-            script_path = 'ESTADISTICAS22-23/estadisticas22-23.py'
+            script_path = 'ESTADISTICAS/estadisticas22-23.py'
         elif visual == "3":
             newvisual = input("¿Qué análisis desea visualizar?\n"
                               "1. Puntos Obtenidos por Equipo en la Fase de Grupos\n"
@@ -32,25 +33,25 @@ def main():
                               "10. Partidos con Goles de ambos Equipos vs. Partidos sin Goles de Ambos Equipos\n"
                               )
             if newvisual == "1":
-                script_path = 'ANALISIS21-22/analisis1.1.py'
+                script_path = 'ANALISIS/analisis1.1.py'
             elif newvisual == "2":
-                script_path = 'ANALISIS21-22/analisis1.2.py'
+                script_path = 'ANALISIS/analisis1.2.py'
             elif newvisual == "3":
-                script_path = 'ANALISIS21-22/analisis1.3.py'
+                script_path = 'ANALISIS/analisis1.3.py'
             elif newvisual == "4":
-                script_path = 'ANALISIS21-22/analisis1.4.py'
+                script_path = 'ANALISIS/analisis1.4.py'
             elif newvisual == "5":
-                script_path = 'ANALISIS21-22/analisis1.5.py'
+                script_path = 'ANALISIS/analisis1.5.py'
             elif newvisual == "6":
-                script_path = 'ANALISIS21-22/analisis1.6.py'
+                script_path = 'ANALISIS/analisis1.6.py'
             elif newvisual == "7":
-                script_path = 'ANALISIS21-22/analisis1.7.py'
+                script_path = 'ANALISIS/analisis1.7.py'
             elif newvisual == "8":
-                script_path = 'ANALISIS21-22/analisis1.8.py'
+                script_path = 'ANALISIS/analisis1.8.py'
             elif newvisual == "9":
-                script_path = 'ANALISIS21-22/analisis1.9.py'
+                script_path = 'ANALISIS/analisis1.9.py'
             elif newvisual == "10":
-                script_path = 'ANALISIS21-22/analisis1.10.py'
+                script_path = 'ANALISIS/analisis1.10.py'
             else:
                 print("Opción no válida, por favor elige una opción del 0 al 10.")
                 continue
@@ -68,28 +69,40 @@ def main():
                               "10. Partidos con Goles de ambos Equipos vs. Partidos sin Goles de Ambos Equipos\n"
                               )
             if newvisual == "1":
-                script_path = 'ANALISIS22-23/analisis2.1.py'
+                script_path = 'ANALISIS/analisis2.1.py'
             elif newvisual == "2":
-                script_path = 'ANALISIS22-23/analisis2.2.py'
+                script_path = 'ANALISIS/analisis2.2.py'
             elif newvisual == "3":
-                script_path = 'ANALISIS22-23/analisis2.3.py'
+                script_path = 'ANALISIS/analisis2.3.py'
             elif newvisual == "4":
-                script_path = 'ANALISIS22-23/analisis2.4.py'
+                script_path = 'ANALISIS/analisis2.4.py'
             elif newvisual == "5":
-                script_path = 'ANALISIS22-23/analisis2.5.py'
+                script_path = 'ANALISIS/analisis2.5.py'
             elif newvisual == "6":
-                script_path = 'ANALISIS22-23/analisis2.6.py'
+                script_path = 'ANALISIS/analisis2.6.py'
             elif newvisual == "7":
-                script_path = 'ANALISIS22-23/analisis2.7.py'
+                script_path = 'ANALISIS/analisis2.7.py'
             elif newvisual == "8":
-                script_path = 'ANALISIS22-23/analisis2.8.py'
+                script_path = 'ANALISIS/analisis2.8.py'
             elif newvisual == "9":
-                script_path = 'ANALISIS22-23/analisis2.9.py'
+                script_path = 'ANALISIS/analisis2.9.py'
             elif newvisual == "10":
-                script_path = 'ANALISIS22-23/analisis2.10.py'
+                script_path = 'ANALISIS/analisis2.10.py'
             else:
                 print("Opción no válida, por favor elige una opción del 0 al 10.")
                 continue
+        elif visual == "5":
+            newvisual = input("¿Qué modelo de prediccion desea usar?\n"
+                              "1. Estandar\n"
+                              "2. Avanzado\n"
+                              "3. Preferencias de Ruben\n"
+                              )
+            if newvisual == "1":
+                script_path = 'PREDICCION/modelo1.py'
+            elif newvisual == "2":
+                script_path = 'PREDICCION/modelo2.py'
+            elif newvisual == "3":
+                script_path = 'PREDICCION/modelo3.py'
         # Ejecutar el script
         try:
             subprocess.run(['python', script_path], check=True)
