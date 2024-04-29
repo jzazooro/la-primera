@@ -16,15 +16,15 @@ data.columns = data.columns.str.strip()
 # Actualizar los datos para el equipo "ATM"
 atm_index = data[data['equipo'] == 'ATM'].index
 data.loc[atm_index, 'partidos jugados'] = 8
-data.loc[atm_index, 'porcentaje posesion'] = 99
-data.loc[atm_index, 'porcentaje pases acertados'] = 99
-data.loc[atm_index, 'asistencias de gol'] = 18
-data.loc[atm_index, 'goles a favor'] = 35
-data.loc[atm_index, 'goles en contra'] = 1
-data.loc[atm_index, 'tiros a puerta'] = 79
-data.loc[atm_index, 'corners'] = 56
-data.loc[atm_index, 'tarjetas amarillas'] = 1
-data.loc[atm_index, 'tarjetas rojas'] = 2
+data.loc[atm_index, 'porcentaje posesion'] = 72
+data.loc[atm_index, 'porcentaje pases acertados'] = 91
+data.loc[atm_index, 'asistencias de gol'] = 20
+data.loc[atm_index, 'goles a favor'] = 32
+data.loc[atm_index, 'goles en contra'] = 3
+data.loc[atm_index, 'tiros a puerta'] = 97
+data.loc[atm_index, 'corners'] = 68
+data.loc[atm_index, 'tarjetas amarillas'] = 18
+data.loc[atm_index, 'tarjetas rojas'] = 1
 
 # Mostrar los datos actualizados para el equipo "ATM"
 data.loc[atm_index]
