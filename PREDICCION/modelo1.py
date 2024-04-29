@@ -60,4 +60,3 @@ equipo2 = input("Introduce el nombre del segundo equipo: ")
 
 # Ejemplo de predicción entre dos equipos
 predict_winner(equipo1, equipo2, data)
-
