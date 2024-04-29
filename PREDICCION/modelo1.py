@@ -1,6 +1,6 @@
 import pandas as pd
 
-file_path = 'actualidad.csv'
+file_path = r'DATOS/actualidad.csv'
 data = pd.read_csv(file_path)
 
 data.head()
