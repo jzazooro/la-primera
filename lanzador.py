@@ -93,9 +93,9 @@ def main():
                 continue
         elif visual == "5":
             newvisual = input("¿Qué modelo de prediccion desea usar?\n"
-                              "1. Estandar\n"
-                              "2. Avanzado\n"
-                              "3. Preferencias de Ruben\n"
+                              "1. Modelo de pesos personalizados\n"
+                              "2. Modelo basico regresion lineal\n"
+                              "3. Modelo avanzado random forest\n"
                               )
             if newvisual == "1":
                 script_path = 'PREDICCION/modelo1.py'

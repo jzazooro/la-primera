@@ -1,4 +1,5 @@
 import pandas as pd
+import csv
 
 file_path = r'DATOS/actualidad.csv'
 data = pd.read_csv(file_path)
@@ -8,20 +9,45 @@ data.head()
 # Limpiar los nombres de las columnas (eliminar espacios adicionales)
 data.columns = data.columns.str.strip()
 
+equipos = []
+
+with open(file_path, 'r', newline='') as archivo:
+    lector_csv = csv.reader(archivo)
+    for fila in lector_csv:
+        if fila:  # Verificar si la fila no está vacía
+            primer_elemento = fila[0]
+            equipos.append(primer_elemento)
+
 # Crear un score basado en las estadísticas disponibles
 # Vamos a considerar más positivo tener mayor posesión, mejor precisión de pases, más goles a favor, menos goles en contra, y más tiros a puerta. Las tarjetas se considerarán negativamente.
+print("Segun tus prefencias deportivas introduce los siguientes parametros (importancias probabilisticas):")
+print("como consejo elije numeros entre 0 y 1")
+while True:
+    try:
+        v1 = float(input("Introduce el valor del porcentaje de posesión: "))
+        v2 = float(input("Introduce el valor del porcentaje de pases acertados: "))
+        v3 = float(input("Introduce el valor de las asistencias de gol: "))
+        v4 = float(input("Introduce el valor de los goles a favor: "))
+        v5 = float(input("Introduce el valor de los goles en contra: "))
+        v6 = float(input("Introduce el valor de los tiros a puerta: "))
+        v7 = float(input("Introduce el valor de los corners: "))
+        v8 = float(input("Introduce el valor de las tarjetas amarillas: "))
+        v9 = float(input("Introduce el valor de las tarjetas rojas: "))
+        break  # Salir del bucle si todas las conversiones son exitosas
+    except ValueError:
+        print("¡Error! Debes introducir un número decimal (float). Intenta de nuevo.")
 
 weights = {
     'partidos jugados': 0,  # Este valor no influye directamente, más bien normalizaremos otras estadísticas con este
-    'porcentaje posesion': 0.2,
-    'porcentaje pases acertados': 0.1,
-    'asistencias de gol': 0.2,
-    'goles a favor': 0.3,
-    'goles en contra': -0.2,
-    'tiros a puerta': 0.2,
-    'corners': 0.05,
-    'tarjetas amarillas': -0.05,
-    'tarjetas rojas': -0.1
+    'porcentaje posesion': v1,
+    'porcentaje pases acertados': v2,
+    'asistencias de gol': v3,
+    'goles a favor': v4,
+    'goles en contra': -v5,
+    'tiros a puerta': v6,
+    'corners': v7,
+    'tarjetas amarillas': -v8,
+    'tarjetas rojas': -v9
 }
 
 # Calculamos el score para cada equipo normalizando algunas estadísticas por partidos jugados
@@ -55,8 +81,14 @@ def predict_winner(team1, team2, data):
         print(f"El partido podría terminar en empate según las estadísticas.")
 
 # pide al usuario que introduzca los equipos
-equipo1 = input("Introduce el nombre del primer equipo: ")
-equipo2 = input("Introduce el nombre del segundo equipo: ")
+while True:
+    equipo1 = input("Introduce las siglas del primer equipo : ")
+    equipo2 = input("Introduce las siglas del segundo equipo: ")
+    
+    if equipo1 not in equipos or equipo2 not in equipos:
+        print("Al menos uno de los equipos no está en el archivo CSV. Por favor, inténtalo de nuevo.")
+    else:
+        break
 
 # Ejemplo de predicción entre dos equipos
 predict_winner(equipo1, equipo2, data)
