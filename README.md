@@ -23,7 +23,7 @@ champions, el modelo ha predicho que el ganador deberia ser el Real Madrid.
 El ultimo modelo hace uso del random forest para analizar los diferentes aspectos del juego de cada equipo y los compara entre si. Recreando las eliminatorias de la actual edicion de la 
 champions, el modelo ha predicho que el ganador deberia ser el PSG.
 
-### CONCLUION
+### CONCLUSION
 Aunque solo uno de los modelos presenta una posibilidad que se pueda cumplir en la realidad, esto refleja que los datos en el futbol pueden servirde utilidad pero no siempre 
 ocurrirá lo que estos dicten a pesar de que la mayoria de partidos si han obtenido un resultado similar a la realidad. Dicho esto muy posiblemente aumentando nuestra base de 
 datos podamos obtener mas precision en la prediccion de los eventos deportivos.
