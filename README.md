@@ -7,8 +7,8 @@ El enlace al repositorio de GitHub de este proyecto es el siguiente: [GitHub](ht
 Hemos recolectado datos de las dos ultimas ediciones de la Champions League ya que son las unicas que no condicional los resultados por la eliminacion de la norma de goles en campo contrario 
 valen doble. Al haberlo realizado a mano, no es necesario hacer una limpieza de los datos ya que he seleccionado los que considero que son utiles para hacer este analisis (en futuras 
 actualizaciones del trabajo se proporcionaran mas datos y mas ediciones de la competicion con el fin de ajustar el modelo a un simulador real de apuestas).
-He realizado un análisis exploratorio para identificar tendencias iniciales, patrones y posibles correlaciones. Los resultados de estos analisis son accesibles ejecutando el main.py y eligiendo
-cual quieres ver. 
+He realizado un análisis exploratorio para identificar tendencias iniciales, patrones y posibles correlaciones. Posteriormente he ido añadiendo modelos de prediccion en base a las estadisticas de los equipos, estos estan relacionados con un modelo de pesos, regresiones lineales y el uso de la tecnica random forest. Los resultados de todos los avances son accesibles 
+ejecutando el main.py y eligiendo cual quieres ver. 
 
 ### OBJETIVO
 El objetivo de esto es predecir resultados, identificar comportamientos de apuestas y optimizar estrategias.
