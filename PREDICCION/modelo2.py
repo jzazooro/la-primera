@@ -38,7 +38,6 @@ features = ['porcentaje posesion', 'porcentaje pases acertados', 'tiros a puerta
 X = data[features]
 y = data['goles_promedio_por_partido']
 
-# Excluir "BAR" y "MAD" para el conjunto de entrenamiento y usarlos solo para pruebas
 train_indices = data[~data['equipo'].isin([equipo1, equipo2])].index
 X_train = X.loc[train_indices]
 y_train = y[train_indices]
